@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "source-backed-decision-team",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Turns a current product decision into a concise, source-backed brief with a recommendation, tradeoffs, uncertainty, and next action.",
   "extensions": {
     "ai.nanoco.nanoclaw": {

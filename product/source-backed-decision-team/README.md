@@ -35,4 +35,6 @@ The agent distinguishes evidence from assumptions, never invents sources or cita
 
 ## Research tools
 
-This template is designed to use Tavily Search and Extract for current web evidence. It contains no API keys, secrets, provider configuration, or author-controlled credentials.
+This template uses Tavily Search and Extract for current web evidence, connected keyless (no API key) via Tavily's shared free allowance. It contains no API keys, secrets, provider configuration, or author-controlled credentials.
+
+Tavily's keyless access is free-tier-capped and shared across everyone using it without a key. If the cap is reached, the agent will say so rather than inventing evidence, and can point you to an optional upgrade: create your own free key at [app.tavily.com](https://app.tavily.com) and connect it through the credentials proxy. You supply your own key — the template never ships or requires one.
