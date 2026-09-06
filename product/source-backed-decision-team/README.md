@@ -37,4 +37,10 @@ The agent distinguishes evidence from assumptions, never invents sources or cita
 
 This template uses Tavily Search and Extract for current web evidence, connected keyless (no API key) out of the box. That keyless connection is the zero-setup default — it works immediately for demos and first runs, with no account or configuration required. It contains no API keys, secrets, provider configuration, or author-controlled credentials.
 
-Tavily's keyless access draws from a shared, free-tier-capped allowance used by everyone without a key, so it can run dry. For dependable ongoing use, a user-provided Tavily key is recommended: create one at [app.tavily.com](https://app.tavily.com) (free tier available) and connect it through the credentials proxy as your own, separate, operator-owned MCP server — never embedded in this template. If the shared allowance is exhausted before you've done that, the agent will say so plainly rather than inventing evidence, and will point you to this upgrade.
+Tavily's keyless access draws from a shared, free-tier-capped allowance used by everyone without a key, so it can run dry. For dependable ongoing use, a user-provided Tavily key is recommended. If the shared allowance is exhausted before you've done that, the agent will say so plainly rather than inventing evidence, and will point you to this upgrade.
+
+**Connecting your own key:**
+
+1. Create a free key at [app.tavily.com](https://app.tavily.com).
+2. Register it with the credentials proxy, matched to Tavily's API host `mcp.tavily.com`, injected as an `Authorization: Bearer <key>` header.
+3. Add it as your own, separate, operator-owned MCP server named `tavily-authed` — never embedded in this template, and never place a real key in this repository.
